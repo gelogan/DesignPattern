@@ -53,4 +53,5 @@ Thumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 
-
+# 6. aider相关
+.aider*
