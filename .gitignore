@@ -1,0 +1,56 @@
+# ==============================================================================
+# C++/Visual Studio/CMake Project .gitignore
+# ==============================================================================
+
+# 1. Visual Studio 缓存与用户配置 (包含截图中出现的遗留项)
+Debug/
+Release/
+x64/
+x86/
+ipch/
+*.sdf
+*.suo           # 截图中出现的 .suo 文件，记录了本地用户的断点、窗口布局等，必须忽略
+*.user          # 本地项目用户配置文件
+*.db
+*.opendb
+.vs/            # Visual Studio 2015+ 的本地隐藏文件夹
+
+# 2. CMake 构建系统生成物
+build/         
+out/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CMakeLists.txt.user
+
+# 3. 编译产生的临时文件和调试符号
+*.obj
+*.o
+*.ilk
+*.pdb           # 调试符号文件，体积通常很大
+*.exp
+*.tlog
+*.lastbuildstate
+*.idb
+*.iobj
+*.ipdb
+
+# 注意：截图中工程自带了第三方预编译的动态库（在 lib 和根目录），
+# 所以这里千万不要全局忽略 *.dll 和 *.lib，否则别人拉取代码后会缺失 FFmpeg 环境。
+# 我们只忽略构建目录（如 build/）中的生成物即可。如果想全局忽略可执行文件，可以取消下一行注释：
+# *.exe
+
+# 4. 自动化文档生成输出
+html/           # Doxygen 生成的 HTML 文档
+latex/          # Doxygen 生成的 LaTeX 源码
+xml/
+rtf/
+man/
+
+# 5. Windows 操作系统生成的系统文件
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+
