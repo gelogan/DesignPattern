@@ -6,3 +6,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_subdirectory(02_Flyweight)
 add_subdirectory(01_Singleton)
+add_subdirectory(03_observer)
