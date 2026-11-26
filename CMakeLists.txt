@@ -17,4 +17,5 @@ add_subdirectory(10_Prototype)
 add_subdirectory(11_Builder)
 add_subdirectory(12_Composite)
 add_subdirectory(13_ChainOfResponsibility)
+add_subdirectory(14_Command)
 
